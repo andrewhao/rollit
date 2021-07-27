@@ -1,0 +1,11 @@
+{
+  "name": "rollit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andrewhao/rollit.git",
+  "author": "Andrew Hao <andrewhao@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.54.0"
+  }
+}
