@@ -7,5 +7,9 @@
   "license": "MIT",
   "devDependencies": {
     "rollup": "^2.54.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "date-fns": "^2.23.0"
   }
 }

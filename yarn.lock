@@ -2,10 +2,110 @@
 # yarn lockfile v1
 
 
+"@rollup/plugin-node-resolve@^13.0.4":
+  version "13.0.4"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.4.tgz#b10222f4145a019740acb7738402130d848660c0"
+  integrity sha1-sQIi9BRaAZdArLdzhAITDYSGYMA=
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    "@types/resolve" "1.17.1"
+    builtin-modules "^3.1.0"
+    deepmerge "^4.2.2"
+    is-module "^1.0.0"
+    resolve "^1.19.0"
+
+"@rollup/pluginutils@^3.1.0":
+  version "3.1.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
+  integrity sha1-cGtFJO5tyLEDs8mVUz5a1oDAK5s=
+  dependencies:
+    "@types/estree" "0.0.39"
+    estree-walker "^1.0.1"
+    picomatch "^2.2.2"
+
+"@types/estree@0.0.39":
+  version "0.0.39"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
+  integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
+
+"@types/node@*":
+  version "16.4.3"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/@types/node/-/node-16.4.3.tgz#c01c1a215721f6dec71b47d88b4687463601ba48"
+  integrity sha1-wBwaIVch9t7HG0fYi0aHRjYBukg=
+
+"@types/resolve@1.17.1":
+  version "1.17.1"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/@types/resolve/-/resolve-1.17.1.tgz#3afd6ad8967c77e4376c598a82ddd58f46ec45d6"
+  integrity sha1-Ov1q2JZ8d+Q3bFmKgt3Vj0bsRdY=
+  dependencies:
+    "@types/node" "*"
+
+builtin-modules@^3.1.0:
+  version "3.2.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/builtin-modules/-/builtin-modules-3.2.0.tgz#45d5db99e7ee5e6bc4f362e008bf917ab5049887"
+  integrity sha1-RdXbmefuXmvE82LgCL+RerUEmIc=
+
+date-fns@^2.23.0:
+  version "2.23.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/date-fns/-/date-fns-2.23.0.tgz#4e886c941659af0cf7b30fafdd1eaa37e88788a9"
+  integrity sha1-TohslBZZrwz3sw+v3R6qN+iHiKk=
+
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha1-RNLqNnm49NT/ujPwPYZfwee/SVU=
+
+estree-walker@^1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/estree-walker/-/estree-walker-1.0.1.tgz#31bc5d612c96b704106b477e6dd5d8aa138cb700"
+  integrity sha1-MbxdYSyWtwQQa0d+bdXYqhOMtwA=
+
 fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=
+
+function-bind@^1.1.1:
+  version "1.1.1"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
+  integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
+
+has@^1.0.3:
+  version "1.0.3"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
+  integrity sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=
+  dependencies:
+    function-bind "^1.1.1"
+
+is-core-module@^2.2.0:
+  version "2.5.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
+  integrity sha1-91SENhfHC/0pt72HMnQAzaXBhJE=
+  dependencies:
+    has "^1.0.3"
+
+is-module@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/is-module/-/is-module-1.0.0.tgz#3258fb69f78c14d5b815d664336b4cffb6441591"
+  integrity sha1-Mlj7afeMFNW4FdZkM2tM/7ZEFZE=
+
+path-parse@^1.0.6:
+  version "1.0.7"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
+
+picomatch@^2.2.2:
+  version "2.3.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
+  integrity sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=
+
+resolve@^1.19.0:
+  version "1.20.0"
+  resolved "https://artifactory-npm.lyft.net/artifactory/api/npm/virtual-npm-lyft/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
+  integrity sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
+  dependencies:
+    is-core-module "^2.2.0"
+    path-parse "^1.0.6"
 
 rollup@^2.54.0:
   version "2.54.0"
