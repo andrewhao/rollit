@@ -133,3 +133,62 @@ export { b };
 ```
 
 That was wild! So we saw tree-shaking in action by witnessing rollup.js pull in the format() function from `date-fns` library!
+
+## Now let's see this in action with another entry point.
+
+Rollup can also do multiple entry points. Let's see how this works.
+
+We add a new entrypoint in a2.js
+
+```js
+// a2.js
+// This file depends on the string we exported in c.js
+
+import { todayString } from './c';
+
+export default `a2 dot jay ess: Today's date is ${todayString}`;
+```
+
+Now we add this to the rollup config:
+
+```js
+  input: {
+    index: 'src/a.js',
+    index2: 'src/a2.js', // Add this line
+  },
+```
+
+And we run:
+
+    $ npx rollup -c rollup.config.js
+
+Now we see two files output in /dist:
+
+```js
+// ➜ cat dist/index.js
+import { t as todayString } from './c-d8f528cb.js';
+
+var b = 'bee dot jay ess';
+
+var a = `a dot jay ess: Today's date is ${todayString}`;
+
+export default a;
+export { b };
+```
+
+And the new entrypoint:
+
+```js
+// ➜ cat dist/index2.js
+import { t as todayString } from './c-d8f528cb.js';
+
+var a2 = `a2 dot jay ess: Today's date is ${todayString}`;
+
+export default a2;
+
+rollit on  main [!?]
+```
+
+### What happened?
+
+Hello, rollup was smart enough to see a shared chunk between the two entry points. c.js becomes its own exported chunk in the `c-d8f528cb.js` file.

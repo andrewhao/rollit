@@ -1,14 +1,14 @@
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
 
 export default {
-    input: {
-        index: 'src/a.js',
-    },
-    output: {
-        name: 'rollit',
-        dir: 'dist',
-        format: 'esm',
-    },
-  plugins: [nodeResolve()]
+  input: {
+    index: 'src/a.js',
+    index2: 'src/a2.js',
+  },
+  output: {
+    name: 'rollit',
+    dir: 'dist',
+    format: 'esm',
+  },
+  plugins: [ nodeResolve() ]
 };
-
